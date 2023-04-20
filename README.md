@@ -6,9 +6,9 @@
 
 Here are some mockup screenshots of the TGSOC website:
 
-![Homepage]images\mockup-of-three-website-screens-overlapping-each-other-1757-el (2).png)
+![Homepage](images\mockups4.png)
 
-![Services](images\mockup-of-three-website-screens-overlapping-each-other-1757-el.png)
+![Services](images\mockups2.png)
 
 
 

@@ -2,6 +2,16 @@
     TGSOC is a website designed for individuals and brands who are interested in getting onboarded into Non-Fungible Tokens (NFTs) and Cryptocurrency as the Future of Payments and Financial Services. This website provides information and guidance for Crypto Enthusiasts and investors who want to learn and make money in the Cryptocurrency space.
 
 
+## Mockup Screenshots
+
+Here are some mockup screenshots of the TGSOC website:
+
+![Homepage]images\mockup-of-three-website-screens-overlapping-each-other-1757-el (2).png)
+
+![Services](images\mockup-of-three-website-screens-overlapping-each-other-1757-el.png)
+
+
+
 ## Services 
 TGSOC offers a variety of services to help individuals and brands learn about Cryptocurrency and Bitcoin, earn passive income using Bitcoin and other Cryptocurrencies, discover the Metaverse and Digital Real Estate, and introduce DeFi or Decentralized Finance.
 

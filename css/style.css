@@ -1310,3 +1310,43 @@ body {
 .square-holder:hover img{
   filter:none;
 }
+
+.blockchain-services {
+  background-color: #f7f7f7;
+  padding: 80px 0;
+}
+
+.blockchain-services h2 {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service {
+  width: 400px;
+  padding: 30px;
+  margin: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.service h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.service p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}

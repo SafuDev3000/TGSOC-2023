@@ -116,10 +116,8 @@ transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
 }
 /* home section */
 #home {
-	background: url('/*
-Impulse Template
-http://www.templatemo.com/tm-469-impulse
-*/
+	color: white;
+}
 
 body {
 	background: #f8f8f8;

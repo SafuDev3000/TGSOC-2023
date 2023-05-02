@@ -400,6 +400,11 @@ transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
 	font-size: 24px;
 	margin-bottom: 20px;
   }
+
+  .work-item:hover {
+	background-color: #d11414;
+  }
+  
   
   #work .bg-black i {
 	background-color: #000;
@@ -436,6 +441,22 @@ transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
 	}
   }
 
+  .styled-button {
+	display: inline-block;
+	padding: 10px 20px;
+	border: 2px solid white;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .styled-button:hover {
+	background-color: white;
+	color: black;
+  }
+  
   
 
 /* team section */
@@ -1352,12 +1373,12 @@ body {
 }
 
 p {
-	font-size: 1.2rem;
-	line-height: 1.6;
-	margin-bottom: 1.6rem;
-	}
-	
-	strong {
-	font-weight: bold;
-	color: #333;
-	}
+font-size: 1.2rem;
+line-height: 1.6;
+margin-bottom: 1.6rem;
+}
+
+strong {
+font-weight: bold;
+color: #333;
+}

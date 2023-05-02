@@ -101,3 +101,11 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+
+const darkModeToggle = document.querySelector('#dark-mode-toggle');
+
+darkModeToggle.addEventListener('click', function() {
+  document.body.classList.toggle('dark-mode');
+  console.log("added");
+});

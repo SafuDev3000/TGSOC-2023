@@ -25,10 +25,14 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Proxima Bold";
 	font-weight: bold;
+	margin: 20px;
+	padding: 20px;
 }
 p {
 	letter-spacing: 1px;
 	line-height: 28px;
+	margin: 10px;
+	padding: 10px;
 }
 hr {
 	border-color: #e0e0e0;
@@ -46,6 +50,7 @@ h3 {
 }
 h4 {
 	font-size: 24px;
+	margin-bottom: 10px;
 }
 h5 {
 	font-size: 18px;
@@ -119,14 +124,45 @@ transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
 	color: white;
 }
 
+
+/* Dark mode color variables */
+.dark-mode {
+	--text-color: #fff;
+	--background-color: #333;
+  }
+
 body {
 	background: #f8f8f8;
-	color: #606060;
+	color: var(--text-color);
+	background-color: var(--background-color);
 	font-family: 'Proxima', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	position: relative;
 }
+
+/* Dark mode styles */
+.dark-mode body {
+	color: var(--text-color);
+	background-color: var(--background-color);
+  }
+
+  /* Example button */
+
+  
+  button#dark-mode-toggle {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+  }
+  
+  button#dark-mode-toggle:hover {
+	background-color: #555;
+  }
+
 html, body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -314,7 +350,12 @@ transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
 	padding-bottom: 140px;
 }
 #intro h4 {
-	padding-bottom: 16px;
+	padding-bottom: 20px;
+}
+
+#intro h2{
+	letter-spacing: 2px;
+	line-height: 1.5em;
 }
 /* Our Services section */
 
@@ -330,12 +371,16 @@ transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
   #work .title h2 {
 	font-size: 36px;
 	margin-bottom: 20px;
+	padding: 50px;
+	letter-spacing: 2px;
+	line-height: 1.5em;
   }
   
   #work .title hr {
 	border-top: 2px solid #1abc9c;
 	width: 80px;
 	margin-bottom: 30px;
+	
   }
   
   #work .title h3 {

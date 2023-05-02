@@ -357,6 +357,27 @@ transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
 	letter-spacing: 2px;
 	line-height: 1.5em;
 }
+
+#intro a {
+	font-size: 18px;
+	padding: 15px 25px;
+	border-radius: 50px;
+	border: none;
+	background-color: #1abc9c;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	transition: all 0.3s ease-in-out;
+  }
+
+  #intro a:hover {
+	background-color: #fff;
+	color: #1abc9c;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+
+
+
 /* Our Services section */
 
 #work {

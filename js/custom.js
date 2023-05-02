@@ -109,3 +109,31 @@ darkModeToggle.addEventListener('click', function() {
   document.body.classList.toggle('dark-mode');
   console.log("added");
 });
+
+
+// GOOGLE FORM / CONTACT
+$(function() {
+  // Get the form element
+  var form = $('#contact-form');
+
+  // Handle form submission
+  form.submit(function(event) {
+    event.preventDefault();
+
+    // Send the form data to Google Forms
+    $.ajax({
+      url: 'https://docs.google.com/forms/d/e/1FAIpQLSc6tGJVY0Kvk1ezV02ZadnTeO6BHcwlYD_1YuazjpTNvlIB_A/formResponse',
+      method: 'POST',
+      dataType: 'xml',
+      data: form.serialize(),
+      success: function() {
+        // Show a success message
+        alert('Your message has been sent!');
+      },
+      error: function() {
+        // Show an error message
+        alert('There was a problem sending your message. Please try again later.');
+      }
+    });
+  });
+});

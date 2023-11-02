@@ -525,8 +525,7 @@ transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
 
 /* team section */
 #team {
-	background: #202020 url('../images/dv.jpg
-    .jpg') 50% 0 repeat-y fixed;
+	
 	color: #ffffff;
 	padding-top: 100px;
 	padding-bottom: 100px;
@@ -899,7 +898,7 @@ body {
 
 .square-holder:hover img{
   filter:none;
-}') 50% 0 repeat-y fixed;
+ 
 	color: #000000;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -1018,14 +1017,8 @@ body {
 	border-radius: 50%;
 	color: #303030;
 }
-/* team section */
-#team {
-	background: #202020 url('../images/dv.jpg
-    .jpg') 50% 0 repeat-y fixed;
-	color: #ffffff;
-	padding-top: 100px;
-	padding-bottom: 100px;
-}
+
+
 #team h2 {
 	color: #ffffff;
 }

@@ -25,10 +25,16 @@
   <link rel="stylesheet" href="css/partnerstyle.css">
   <link rel="stylesheet" href="css/platforms.css">
 <link rel="stylesheet" href="css/cards.css">
+
+<script src="https://js.stripe.com/v3/"></script>
+
+
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
 <style>
+
+  
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
@@ -38,8 +44,9 @@
 }
 
 .price {
-  color: grey;
+  color: black;
   font-size: 22px;
+  font-weight: bold;
 }
 
 .card button {
@@ -47,7 +54,7 @@
   outline: 0;
   padding: 12px;
   color: white;
-  background-color: #000;
+  background-color: red;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -149,32 +156,17 @@
 <div class="preloader">
   <div class="sk-spinner sk-spinner-rotating-plane"></div>
 </div>
-<!-- home section -->
-<section id="home">
-<script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> <div class="livecoinwatch-widget-5" lcw-base="USD" lcw-color-tx="#999999" lcw-marquee-1="coins" lcw-marquee-2="movers" lcw-marquee-items="10" ></div>
-
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 col-sm-12">
-        <h1 class="wow bounceInDown rotate"></h1>
-        <div id="logo"> 
-          <img src="images/tgsoclogo.png" height="150px" width="150px"> 
-        </div> 
-        <h2 class="wow bounce"></h2>
-        <a href="#intro" class="btn btn-default smoothScroll">GET STARTED</a></div>
-    </div>
-  </div>
-</section>
 <!-- navigation section -->
 <div class="navbar navbar-default navbar-static-top" role="navigation">
   <div class="container">
+    
     <div class="navbar-header">
       <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon icon-bar"></span> <span class="icon icon-bar"></span> <span class="icon icon-bar"></span> </button>
       <!-- <a href="#" class="navbar-brand">TGSOC</a><button id="dark-mode-toggle">Toggle Dark Mode</button> -->
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
+        
         <li><a href="#home" class="smoothScroll">HOME</a></li>
         <li><a href="#intro" class="smoothScroll">INTRO</a></li>
         <li><a href="#work" class="smoothScroll">SERVICES</a></li>
@@ -186,6 +178,27 @@
     </div>
   </div>
 </div>
+<div class="price-tracker">
+  <h2 class="price-tracker-header">Live Cryptocurrency Price Tracker</h2>
+<script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> <div class="livecoinwatch-widget-5" lcw-base="USD" lcw-color-tx="#999999" lcw-marquee-1="coins" lcw-marquee-2="movers" lcw-marquee-items="10" ></div>
+</div>
+
+<!-- home section -->
+<section id="home">
+  <div class="first-container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <h1 class="wow bounceInDown rotate"></h1>
+        
+        <!-- <div class="video-container">
+          <video ><source src="./assets/videos-hor/logoreveal.mp4" type="video/ogg"></video>
+        </div> -->
+        <h2 class="wow bounce"></h2>
+        <a href="#intro" class="btn btn-default smoothScroll">GET STARTED</a></div>
+    </div>
+  </div>
+</section>
+
 <!-- intro section -->
 <section id="intro">
   <div class="container">
@@ -193,7 +206,15 @@
       <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 title">
         <h4>TGSOC - Blockchain Services & Advisory</h4>
         <h2>The Absolute Best In Blockchain, Web3 and DeFi<br></h2>
-        <hr>
+        <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+          <img src="https://img.icons8.com/?size=48&id=50284&format=png
+          " alt="Crypto Icon" style="height: 50px; width: 50px;">
+          <img src="https://img.icons8.com/?size=24&id=86987&format=png" alt="Crypto Icon" style="height: 50px; width: 50px;">
+          <img src="https://img.icons8.com/?size=80&id=yGMRph0yuWsu&format=png" alt="Crypto Icon" style="height: 50px; width: 50px;">
+          <img src="https://img.icons8.com/?size=50&id=uG9G93p98cre&format=png
+          " alt="Crypto Icon" style="height: 50px; width: 50px;">
+      </div>
+        <br>
         <p>Our blockchain consulting website helps companies and individuals integrate and learn about blockchain, including Non-Fungible Tokens (NFT) and Cryptocurrency as the Future of Payments and Financial Services. </p>
       </div>
       <a href="#service" class="btn btn-default smoothScroll">Request Info</a>
@@ -201,49 +222,77 @@
   </div>
 </section>
 <!-- work section -->
+<div class="grand-container">
+  <p>Founded By</p>
+  <!-- <img src="images/2023/ggrand-jacket.png" width="120px" height="70px">  -->
+</div>
 <section id="work">
   <div class="container">
+    
     <div class="row">
       <div class="col-md-4 col-sm-4">
         <div class="title">
           <h2>Our Blockchain Services</h2>
+          <img src="images/Logos/tgsoclogo.png" width="120px" height="70px"> 
           <hr>
           <h3>Explore and Integrate:</h3>
-          <ul>
-            <li>Blockchain Technology in Supply Chain Management</li>
-            <li>Blockchain-Based Financial Services and Transactions</li>
-            <li>Tokenization and Decentralized Marketplaces for Retail Industry</li>
-            <li>Blockchain Solutions for Real Estate Industry</li>
-            <li>Blockchain-Based Healthcare Data Management and Privacy</li>
-            <li>And More</li>
+          <ul class="services-list">
+            <li><i class="service-icon fa fa-truck"></i> Blockchain Technology in Supply Chain Management</li>
+            <li><i class="service-icon fa fa-money"></i> Blockchain-Based Financial Services and Transactions</li>
+            <li><i class="service-icon fa fa-shopping-cart"></i> Tokenization and Decentralized Marketplaces for Retail Industry</li>
+            <li><i class="service-icon fa fa-building"></i> Blockchain Solutions for Real Estate Industry</li>
+            <li><i class="service-icon fa fa-heartbeat"></i> Blockchain-Based Healthcare Data Management and Privacy</li>
+            <li><i class="service-icon fa fa-ellipsis-h"></i> And More</li>
           </ul>
-          <a href="#intro" class="btn btn-default smoothScroll">Book a Consultation</a>
+          <a target="_blank" href="https://calendly.com/ggrand_tgsoc/30min" class="btn btn-default smoothScroll">Book a Consultation</a>
         </div>
       </div>
       <div class="col-md-8 col-sm-8">
         <div class="row">
           <div class="col-md-6 col-sm-6">
-            <div class="work-item bg-black">
-              <i class="fa fa-mobile"></i>
-              <h3 class="styled-button">Consultations</h3>
+            <div class="work-item bg-red" style="position: relative;">
+              <div class="animated-background3"></div>
+              <div class="content-overlay"></div>
+              <div class="content">
+                <i class="fa fa-mobile"></i>
+                <h3 class="styled-button">Consultations</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+          <div class="col-md-6 col-sm-6" >
+            <div class="work-item bg-red" style="position: relative;">
+              <div class="animated-background3"></div>
+              <div class="content-overlay"></div>
+              <div class="content">
+                <i class="fa fa-cloud"></i>
+              <h3 class="styled-button">Cryptocurrency Education</h3>
+              </div>
+              
             </div>
           </div>
           <div class="col-md-6 col-sm-6">
-            <div class="work-item bg-red">
-              <i class="fa fa-cloud"></i>
-              <h3>Cryptocurrency Education</h3>
+            <div class="work-item bg-red" style="position: relative;">
+              <div class="animated-background3"></div>
+              <div class="content-overlay"></div>
+              <div class="content">
+                <i class="fa fa-link"></i>
+              <h3 class="styled-button">Blockchain Integration</h3>
+              </div>
+              
             </div>
           </div>
           <div class="col-md-6 col-sm-6">
-            <div class="work-item bg-red">
-              <i class="fa fa-link"></i>
-              <h3>Blockchain Integration</h3>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-6">
-            <div class="work-item bg-black">
-              <i class="fa fa-globe"></i>
-              <h3>Non-Fungible Technology</h3>
+            <div class="work-item bg-red" style="position: relative;">
+              <div class="animated-background3"></div>
+              <div class="content-overlay"></div>
+              <div class="content">
+                <i class="fa fa-globe"></i>
+                <h3 class="styled-button">Non-Fungible Technology</h3>
+              </div>
+            
             </div>
           </div>
         </div>
@@ -264,39 +313,92 @@
         <h2>MEDIA</h2>
       
      <div id="videoal">
-    <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/jzKwr94kVWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="video-container">
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/jzKwr94kVWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </video>
     </div>
 
-    
 </div>
   </div>
   </article>
 </section>
+
+
   <br><br>
   <section id="service" class="blockchain-services">
-    <h2>Blockchain Services</h2>
+    <h2>Web3 Service Breakdown</h2>
+    <h4>By Industry</h4>
     <div class="services-container">
       <div class="service">
-        <h3>Supply Chain Management</h3>
+        <!-- <div class="service-overlay"> -->
+          <i class="fa fa-truck service-icon"></i>
+          <h3>Supply Chain Management</h3>
         <p>Integrating <strong>blockchain technology</strong> into their <strong>supply chain management system</strong>, traditional companies can improve <strong>transparency</strong> and reduce <strong>fraud</strong>. We can help businesses identify areas where blockchain can be applied and can assist in developing and implementing solutions to <strong>increase efficiency</strong>, <strong>reduce costs</strong>, and enhance <strong>trust among customers</strong>.</p>
+        <!-- </div> -->
+        <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+          <img src="https://img.icons8.com/?size=50&id=25214&format=png
+          " alt="Crypto Icon" style="height: 50px; width: 50px;">
+          <img src="https://img.icons8.com/?size=80&id=VzxQUkU2lzey&format=png" alt="Crypto Icon" style="height: 50px; width: 50px;">
+          <img src="https://img.icons8.com/?size=50&id=24662&format=png" alt="Crypto Icon" style="height: 50px; width: 50px;">
+          <img src="https://img.icons8.com/?size=50&id=6S0oIdwbOlT5&format=png
+          " alt="Crypto Icon" style="height: 50px; width: 50px;">
+      </div>
+        
       </div>
       <div class="service">
+        <i class="fa fa-money service-icon"></i>
         <h3>Financial Services</h3>
         <p>Blockchain technology can <b>streamline and automate</b> many financial processes, <b>reducing the need for intermediaries</b> and <b>improving transaction speed and security</b>. We can help traditional financial institutions leverage blockchain technology to <b>gain a competitive advantage and offer new services to customers</b>.</p>
+
+        <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+          <img src="https://cdn.iconscout.com/icon/free/png-512/free-coinbase-2709182-2249228.png?f=webp&w=256
+          " alt="Crypto Icon" style="height: 50px; width: 50px;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9_hsZ4QVgdWDOHknvmDuQzZWaIKJCIe06r9AX1f0ohA&s" alt="Crypto Icon" style="height: 50px; width: 50px;">
+          <img src="https://user-images.githubusercontent.com/1494739/111933085-fc186600-8a7b-11eb-88c9-a1190c5d7996.png" alt="Crypto Icon" style="height: 50px; width: 50px;">
+          <img src="https://logowik.com/content/uploads/images/moonpay3926.jpg
+          " alt="Crypto Icon" style="height: 50px; width: 50px;">
+      </div>
       </div>
       <div class="service">
+        <i class="fa fa-home service-icon"></i>
         <h3>Real Estate</h3>
         <p>Blockchain technology can <b>facilitate the transfer and management of property titles</b>, <b>reduce the need for intermediaries</b>, and <b>improve transparency</b>. We can help traditional real estate companies explore the potential of blockchain technology and can assist in developing and implementing solutions to <b>enhance efficiency, reduce costs, and increase trust among customers</b>.</p>
+
+        <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH2D6wmrgrDadVYyhsxctxMZhyi1_SyNJQY2T5l2rd9A&s
+          " alt="Crypto Icon" style="height: 50px; width: 50px;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYMgwoWF6bRnS1HTP2leQtsSxkEEsHbw5cU6gh1zi0&s" alt="Crypto Icon" style="height: 50px; width: 50px;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6miS1qwM-6dGu41DQVYxeD0Lhk-Lp37fHoN81M97hog&s" alt="Crypto Icon" style="height: 50px; width: 50px;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQErecNiKiHXlepKDF0cQqrmjYABF92R0-iHUQXtETUqQ&s
+          " alt="Crypto Icon" style="height: 50px; width: 50px;">
+      </div>
       </div>
       <div class="service">
+        <i class="fa fa-heart service-icon"></i>
         <h3>Healthcare</h3>
         <p>Blockchain technology has the potential to enhance the security and privacy of healthcare data, making it easier for patients to manage and share their medical records. Our consulting services can assist healthcare providers in leveraging blockchain technology to improve patient care and revolutionize the healthcare system.</p>
+        <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXxjDgcXihRsbm0TH6xNVEV1_r6pBhQaHcn2arrmMPFw&s
+          " alt="Crypto Icon" style="height: 50px; width: 50px;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSti9adJIczPHmDlI_lvKqA1U0IuwuouqBzqmeg8q6IKA&s" alt="Crypto Icon" style="height: 50px; width: 50px;">
+          <img src="https://pbs.twimg.com/profile_images/1029045109579497474/UhsEpFpX_400x400.jpg" alt="Crypto Icon" style="height: 50px; width: 50px;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1XTvoI6AYX_ICnaC5NCXMTJpyNzAyyV3i1Uuaw8cp5Q&s
+          " alt="Crypto Icon" style="height: 50px; width: 50px;">
+      </div>
       </div>
       <div class="service">
+        <i class="fa fa-shopping-cart service-icon"></i>
         <h3>Retail</h3>
         <p>Revolutionize the retail industry with blockchain technology, enabling new business models such as tokenization and decentralized marketplaces. Our team can help traditional retailers stay ahead of the curve by exploring these new models and developing custom strategies to leverage them. This creates a competitive advantage, offering new services to customers and leading the way in innovation.</p>
+
+        <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_RtX8AJYrDfnArok9l8mbJNISeYzBhK5AzgmPIzIz5g&s
+          " alt="Crypto Icon" style="height: 50px; width: 50px;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmP6RZNeT0wK4DR6kP1pijkI-HoSX0RpA27HEawnk_FA&s" alt="Crypto Icon" style="height: 50px; width: 50px;">
+          <img src="https://img.icons8.com/?size=50&id=38297&format=png" alt="Crypto Icon" style="height: 50px; width: 50px;">
+          <img src="https://pbs.twimg.com/profile_images/1410451402703491074/vfwgFfSL_400x400.jpg
+          " alt="Crypto Icon" style="height: 50px; width: 50px;">
+      </div>
       </div>
     </div>
   </section>
@@ -324,42 +426,41 @@
   </div>
 </div>
 -->
-<section>
-<br></br>
-
+<section id="nfts">
 <h2>NFTs</h2>
-  <br></br>
 <article>
-   
-   
-    <div class="card">
-      <img class="nft-card-image" src="https://i.imgur.com/qivQ5PKb.png" alt="NFTs, Collections">
-      <div class="img-overlay"><img src=""> </div>
-      <h2>Pineapple #3749</h2>
-      <p> This is a collection of 5,000 pineapples based on 109 different traits such as backgrounds, skins, crowns, eyes, mouths, accessories and footwear. Pineapples Day Out created by Laura and Natasha launched on 31st July at 6pm EST making the collection the first NFT project led by an African team.</p>
-      
-        <div class="creator">
-          <img src="/images/pdo.jpg">
-          <div>Creation of <span>Laura and Natasha</span></div>
-          <a target="_blank" href='https://opensea.io/collection/pineapplesdayout'><button class="button button1">View The Collection</button></a>
-        </div>
-  </div>
+  <div class="card">
+    <img class="nft-card-image" src="https://i.imgur.com/qivQ5PKb.png" alt="NFTs, Collections">
+    <div class="img-overlay"><img src=""> </div>
+    <h2>Pineapple #3749</h2>
+    <p> This is a collection of 5,000 pineapples based on 109 different traits such as backgrounds, skins, crowns, eyes, mouths, accessories and footwear. Pineapples Day Out created by Laura and Natasha launched on 31st July at 6pm EST making the collection the first NFT project led by an African team.</p>
+    
+      <div class="creator">
+        <img src="/images/pdo.jpg">
+        <div>Creation of <span>Laura and Natasha</span></div>
+        <a target="_blank" href='https://opensea.io/collection/pineapplesdayout'><button class="button button1">View The Collection</button></a>
+      </div>
+</div>
         
     
 
      
-      <div class="card">
+  <div class="card">
+
         <img class="nft-card-image" src="https://i.imgur.com/c6udVDRb.png" alt="NFTs, Collections">
-        <div class="img-overlay"><img src=""> </div>
+        
+    
+      <div class="content" style="position: relative; z-index: 2;">
         <h2>BAYC REPLICA</h2>
         <p> The Bored Ape Yacht Club is a collection of 10,000 unique Bored Ape NFTs— unique digital collectibles living on the Ethereum blockchain. Your Bored Ape doubles as your Yacht Club membership card, and grants access to members-only benefits, the first of which is access to THE BATHROOM, a collaborative graffiti board. Future areas and perks can be unlocked by the community through roadmap activation. Visit www.BoredApeYachtClub.com for more details.</p>
+      </div>
+          
         
-        <div class="creator">
-          <img src="/images/yuga-labs-social.jpg">
-          <a target="_blank" href='https://opensea.io/collection/boredapeyachtclub'><button class="button button1">View The Collection</button></a>
-          <div>Creation of <span> YugaLabs</span></div>
-         
-        </div>
+          <div class="creator">
+            <img src="/images/yuga-labs-social.jpg">
+            <a target="_blank" href='https://opensea.io/collection/boredapeyachtclub'><button class="button button1">View The Collection</button></a>
+            <div>Creation of <span> YugaLabs</span></div>
+          </div>
   </div>
 
       
@@ -374,7 +475,7 @@
         <div class="creator">
           <img src="/images/cc.png">
           <a target="_blank" href='https://opensea.io/collection/cryptocannabisclub'><button class="button button1">View The Collection</button></a>
-          <div>Creation of <span>CryptoCannabisClub</span></div>
+          <div class="">Creation of <span>CryptoCannabisClub</span></div>
         </div>
   </div>
 
@@ -389,14 +490,31 @@
 
 <section id="ebooks">
 <h2>Education</h2>
-
 <article>  
 <div class="card">
   <img src="https://i.imgur.com/jC2KGcz.png" alt="Ebooks" style="width:100%">
   <h1>Fantom (FTM) NFT ALPHA Guide</h1>
   <p class="price">$50.00</p>
   <p>For beginner's and NFT veterans alike. Features Key topics such as Getting started with the Fantom Bridge, Setting up Metamask For $FRM Correctly, Changing RPC's, Tracking Gas Prices For $FTM, Best #fantom accounts to follow, How-To Find the BEST Drops and Much More!</p>
-  <p><a target="_blank" href="/ftmalpha.html"><button>Purchase NOW!</button></a></p>
+  <p><a target="_blank" href='https://genogrand.myshopify.com/'><button id="purchaseBtn">Purchase NOW!</button></a></p>
+
+  <!-- The Modal -->
+<div id="purchaseModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form id="payment-form">
+      <div id="card-element">
+        <!-- A Stripe Element will be inserted here. -->
+      </div>
+      <!-- Used to display Element errors. -->
+      <div id="card-errors" role="alert"></div>
+      <button type="submit">Submit Payment</button>
+    </form>
+  </div>
+
+</div>
 </div>
   
   
@@ -406,7 +524,7 @@
   <h1>Polygon (MATIC) NFT ALPHA Guide</h1>
   <p class="price">$50.00</p>
   <p>For beginner's and NFT veterans alike. Features Key topics such as Getting started with the Polygon Bridge, Setting up Metamask For $MATIC Correctly, Changing RPC's, Tracking Gas Prices For $MATIC, Best #Cronos accounts to follow, How-To Find the BEST Drops and Much More!</p>
-  <p><a target="_blank" href="/PolygonEbook.html"><button>Purchase NOW!</button></a></p>
+  <p><a target="_blank" href='https://genogrand.myshopify.com/'><button id="purchaseBtn">Purchase NOW!</button></a></p>
 </div>
  
   
@@ -416,7 +534,7 @@
   <h1>Cronos $CRO NFT ALPHA Guide</h1>
   <p class="price">$50.00</p>
   <p>For beginner's and NFT veterans alike. Features Key topics such as Getting started with the Cronos Bridge, Setting up Metamask For Fantom Correctly, Changing RPC's, Tracking Gas Prices For $CRO, Best #Cronos accounts to follow, How-To Find the BEST Drops and Much More!</p>
-  <p><a target="_blank" href="/cronftalpha.html"><button>Purchase NOW!</button></a></p>
+  <p><a target="_blank" href='https://genogrand.myshopify.com/'><button id="purchaseBtn">Purchase NOW!</button></a></p>
 </div>
  
 </article>
@@ -446,7 +564,7 @@
 <h2>Portfolio</h2>
 <ul class="cards">
   <li>
-    <a target="_blank" href="http://cronoskitchen.xyz" class="card">
+    <a target="_blank" href="https://4cmarket.netlify.app/" class="card">
       <img src="https://i.imgur.com/IMEnYW5.png" class="card__image" alt="" />
       <div class="card__overlay">
         <div class="card__header">
@@ -462,15 +580,15 @@
     </a>      
   </li>
   <li>
-    <a target="_blank" href="http://cronft.shop" class="card">
-      <img src="https://i.imgur.com/c5U8Q2G.png" class="card__image" alt="" />
+    <a target="_blank" href="https://nftcollectx.pro/" class="card">
+      <img src="./images/2023/latin-jacket-1.png" class="card__image" alt="" />
       <div class="card__overlay">        
         <div class="card__header">
           <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
           <img class="card__thumb" src="https://i.imgur.com/GmEJyCo.png" alt="" />
           <div class="card__header-text">
-            <h3 class="card__title">NFT Enabled Video Game</h3>
-            <span class="card__status">3rd Person Shooter</span>
+            <h3 class="card__title">NFT Collection Manager</h3>
+            <span class="card__status">For NFT Enthusiasts and Creators</span>
           </div>
         </div>
         <p class="card__description">Another F2P Game Built for our Community Game Nights! Similar to Fortnite with various game modes!</p>
@@ -478,7 +596,7 @@
     </a>
   </li>
   <li>
-    <a  target="_blank" href="http://cronosclassroom.art" class="card">
+    <a  target="_blank" href="https://croclass.netlify.app/" class="card">
       <img src="https://i.imgur.com/P2s15XV.png" class="card__image" alt="" />
       <div class="card__overlay">
         <div class="card__header">
@@ -495,7 +613,7 @@
     </a>
   </li>
   <li>
-    <a target="_blank" href="http://crobadge.shop" class="card">
+    <a target="_blank" href="https://crobadge.netlify.app/" class="card">
       <img src="https://i.imgur.com/PlRHimf.png" class="card__image" alt="" />
       <div class="card__overlay">
         <div class="card__header">
@@ -564,21 +682,25 @@
 </div>
 
 
-<form id="contact-form">
-  <div class="form-group">
-    <label for="name">Name</label>
-    <input type="text" class="form-control" id="name" name="entry.1234567890">
-  </div>
-  <div class="form-group">
-    <label for="email">Email address</label>
-    <input type="email" class="form-control" id="email" name="entry.0987654321">
-  </div>
-  <div class="form-group">
-    <label for="message">Message</label>
-    <textarea class="form-control" id="message" name="entry.2468101214" rows="3"></textarea>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+
+<div class="contact-form-container">
+  <form id="contact-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc6tGJVY0Kvk1ezV02ZadnTeO6BHcwlYD_1YuazjpTNvlIB_A/formResponse" method="POST">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" name="entry.1862065349">
+    </div>
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input type="email" class="form-control" id="email" name="entry.1202060767">
+    </div>
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea class="form-control" id="message" name="entry.541279924" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
 
 
 
@@ -611,6 +733,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<script src="./Observer.js"></script>
+<script src="./Checkout.js"></script>
+
+
 
 
 </body>

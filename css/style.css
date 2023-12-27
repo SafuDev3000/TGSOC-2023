@@ -465,14 +465,85 @@ body .navbar-default .navbar-nav li a {
 
 
 
-  #nfts h2{
-	font-weight: bold;
-	
-  }
+  #nfts {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+}
 
-  #nfts p{
-	color: black;
-  }
+.section-title {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.nft-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nft-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+}
+
+.nft-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.nft-card-content {
+    padding: 20px;
+}
+
+.nft-card-content h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.nft-card-footer {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9em;
+}
+
+.nft-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nft-button:hover {
+    background-color: #0056b3;
+}
+
+.creator-name {
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nft-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nft-card {
+        width: 90%;
+    }
+}
+
   
 
   

@@ -86,6 +86,30 @@ h6 { font-size: 16px; }
     animation: sk-rotatePlane 1.2s infinite ease-in-out;
 }
 
+
+.futuristic-button {
+    background-color: #00cc00; /* Change to your preferred futuristic color */
+    border: 2px solid #00cc00; /* Add a border for a futuristic look */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.futuristic-button:hover {
+    background-color: #ff6600; /* Change to a different color on hover */
+    border-color: #ff6600; /* Change border color on hover */
+}
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px; /* Makes the button rounded */
+    background-color: #0088ff; /* You can change the color to suit your style */
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
 @keyframes sk-rotatePlane {
     0% { transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
     50% { transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
@@ -137,6 +161,7 @@ button#dark-mode-toggle:hover {
 #home .btn {
 	background: #ff0000;
 	border-radius: 4px;
+	border-radius: 50px; /* Makes the button rounded */
 	border: none;
 	color: #ffffff;
 	font-size: 16px;
@@ -355,6 +380,7 @@ body .navbar-default .navbar-nav li a {
 
   .btn.btn-default {
     background-color: red;
+	border-radius: 50px; /* Makes the button rounded */
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -667,6 +693,7 @@ body .navbar-default .navbar-nav li a {
 	background: #ffffff;
 	border: none;
 	border-radius: 0;
+	border-radius: 50px; /* Makes the button rounded */
 	color: #ff0000;
 	font-size: 16px;
 	font-weight: bold;
@@ -745,6 +772,7 @@ body .navbar-default .navbar-nav li a {
 .btn-primary {
     background-color: red;
     border-color: #007bff;
+	border-radius: 50px; /* Makes the button rounded */
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -1072,6 +1100,7 @@ body {
 #home .btn {
 	background: red;
 	border-radius: 4px;
+	border-radius: 50px; /* Makes the button rounded */
 	border: none;
 	color: #ffffff;
 	font-size: 16px;
@@ -1146,6 +1175,7 @@ body {
 	background: #ffffff;
 	border: none;
 	border-radius: 0;
+	border-radius: 50px; /* Makes the button rounded */
 	color: #ff0000;
 	font-size: 16px;
 	font-weight: bold;

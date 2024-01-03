@@ -240,7 +240,7 @@ body .navbar-default .navbar-nav li a {
 /* Our Services section */
 
 #work {
-	background-image: url('../images/hometeam.jpg');
+	
 	padding: 80px 0;
   }
 
@@ -354,7 +354,7 @@ body .navbar-default .navbar-nav li a {
   }
 
   .btn.btn-default {
-    background-color: #1abc9c;
+    background-color: red;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -467,6 +467,7 @@ body .navbar-default .navbar-nav li a {
 
   #nfts {
     background-color: #f4f4f4;
+	background: url('../images/Logos/white2.png') no-repeat center center;
     padding: 40px;
     text-align: center;
 }
@@ -685,7 +686,7 @@ body .navbar-default .navbar-nav li a {
 }
 /* contact section */
 #contact {
-	background: #f6f6f6 url('../images/contact-bg.jpg') 50% 0 repeat-y fixed;
+	background: url('../images/Logos/white2.png') no-repeat center center;
 	color: #ffffff;
 	padding-top: 100px;
 	padding-bottom: 80px;
@@ -742,7 +743,7 @@ body .navbar-default .navbar-nav li a {
 }
 
 .btn-primary {
-    background-color: #007bff;
+    background-color: red;
     border-color: #007bff;
     color: white;
     padding: 10px 20px;
@@ -1069,7 +1070,7 @@ body {
 	letter-spacing: 2px;
 }
 #home .btn {
-	background: #17a589;
+	background: red;
 	border-radius: 4px;
 	border: none;
 	color: #ffffff;
@@ -1164,7 +1165,7 @@ body {
 }
 /* contact section */
 #contact {
-	background: #f6f6f6 url('../images/contact-bg.jpg') 50% 0 repeat-y fixed;
+	background: #f6f6f6 url('../images/Logos/white2.png') 50% 0 repeat-y fixed;
 	color: #ffffff;
 	padding-top: 100px;
 	padding-bottom: 80px;
@@ -1643,6 +1644,13 @@ color: #333;
   }
   
 
+  #ebooks{
+	background: url('../images/Logos/white2.png') no-repeat center center;
+	padding: 40px;
+    text-align: center;
+	background-color: #f4f4f4;
+
+  }
 #ebooks h2, h1{
 	font-weight: bold;
 }

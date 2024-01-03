@@ -24,7 +24,7 @@ body {
 
 .card {
   position: relative;
-  background-color: var(--soft-blue);
+  background-color: white;
   width: 450px;
   padding: 25px 25px;
   border-radius: 2%;

@@ -153,6 +153,47 @@
 .demo:hover {
   opacity: 1;
 }
+
+/* Blog Section Styles */
+.blog-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.blog-section .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5em;
+}
+
+.blog-post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.blog-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.blog-title {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.blog-description {
+    margin-bottom: 15px;
+}
+
+.read-more {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 </style>
 <!-- preloader section -->
 <div class="preloader">
@@ -241,7 +282,7 @@
       <div class="col-md-4 col-sm-4">
         <div class="title">
           <h2>Our Blockchain Services</h2>
-          <img src="images/Logos/tgsoclogo.png" width="120px" height="70px"> 
+          <img src="images/Logos/tgsoclogo.png" width="auto" height="70px"> 
           <hr>
           <h3>Explore and Integrate:</h3>
           <ul class="services-list">
@@ -525,6 +566,48 @@
 </div>
  
 </article>
+<!-- Blog Section -->
+<section id="blog" class="blog-section">
+  <div class="container">
+      <h2 class="section-title wow fadeInUp">Latest Blog Posts</h2>
+      <div class="row">
+          <!-- Blog Post 1 -->
+          <div class="col-md-4 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="blog-post">
+                  <img src="/images/Media/btc3.jpg" alt="Blog Image" class="blog-image">
+                  <h3 class="blog-title">Unveiling the Challenges Faced by the Cronos Blockchain Ecosystem</h3>
+                  <p class="blog-description">The Cronos blockchain has garnered attention in recent times, attracting dedicated individuals and prominent projects to its platform. However, a closer look reveals a series of concerns that need to be addressed to ensure the long-term success and growth of this ecosystem</p>
+                  <a href="https://medium.com/@crooksofcronos" class="read-more">Read More</a>
+              </div>
+          </div>
+          <!-- Repeat for more blog posts -->
+          <!-- Blog Post 1 -->
+          <div class="col-md-4 wow fadeInLeft" data-wow-delay="0.2s">
+            <div class="blog-post">
+                <img src="/images/Media/btc1.jpg" alt="Blog Image" class="blog-image">
+                <h3 class="blog-title">GDRToken and Higher Liquidity = A Good Thing?</h3>
+                <p class="blog-description">The recent news that the Good Driver Reward Token (GDRToken) has doubled its liquidity pool has many investors and traders excited. But what exactly does this mean and why is it such a big deal?</p>
+                <a href="https://medium.com/@crooksofcronos" class="read-more">Read More</a>
+            </div>
+          </div>
+
+          <!-- ... -->
+           <!-- Blog Post 1 -->
+           <div class="col-md-4 wow fadeInLeft" data-wow-delay="0.2s">
+            <div class="blog-post">
+                <img src="/images/Media/btc2.jpg" alt="Blog Image" class="blog-image">
+                <h3 class="blog-title">“From Cronos Crooks to 4C’s: Transforming the NFT Ecosystem with Innovation and Inclusivity”</h3>
+                <p class="blog-description">As the NFT space continues to evolve, so does our project. We’re excited to announce that we’ve recently changed our name from Cronos Crooks to Cro County Crypto, or 4C’s for short.</p>
+                <a href="https://medium.com/@crooksofcronos/from-cronos-crooks-to-4cs-transforming-the-nft-ecosystem-with-innovation-and-inclusivity-270a3924f341" class="read-more">Read More</a>
+            </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+
+
+
 
 
 <!-- contact section --
@@ -548,33 +631,35 @@
     </div>
   </div>-->
 <section>
-<h2>Portfolio</h2>
+<h2>Apps</h2>
 <ul class="cards">
   <li>
     <a target="_blank" href="https://4cmarket.netlify.app/" class="card">
-      <img src="https://i.imgur.com/IMEnYW5.png" class="card__image" alt="" />
+      <img src="/images/Media/hometeam.jpg" class="card__image" alt="" />
       <div class="card__overlay">
         <div class="card__header">
           <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-          <img class="card__thumb" src="https://i.imgur.com/yEAJAz9.png" alt="" />
+          <img class="card__thumb" src="/images/Logos/white2.png" alt="" />
           <div class="card__header-text">
-            <h3 class="card__title">NFT Marketplace</h3>            
+            <h3 class="card__title">"Cronos Kitchen" - NFT Marketplace</h3>            
             <span class="card__status">Multi-Chain</span>
           </div>
         </div>
-        <p class="card__description">Multi Chain NFT Marketplace built on Moralis</p>
+        <p class="card__description">Multi Chain NFT Marketplace built on Moralis
+          Currently in (Beta) Under Development
+        </p>
       </div>
     </a>      
   </li>
   <li>
     <a target="_blank" href="https://nftcollectx.pro/" class="card">
-      <img src="./images/2023/latin-jacket-1.png" class="card__image" alt="" />
+      <img src="./images/2023/NFTCollectX_Logo.png" class="card__image" alt="" />
       <div class="card__overlay">        
         <div class="card__header">
           <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
-          <img class="card__thumb" src="https://i.imgur.com/GmEJyCo.png" alt="" />
+          <img class="card__thumb" src="/images/Logos/white2.png" alt="" />
           <div class="card__header-text">
-            <h3 class="card__title">NFT Collection Manager</h3>
+            <h3 class="card__title">"NFT Collect X" - NFT Collection Manager</h3>
             <span class="card__status">For NFT Enthusiasts and Creators</span>
           </div>
         </div>
@@ -584,11 +669,11 @@
   </li>
   <li>
     <a  target="_blank" href="https://croclass.netlify.app/" class="card">
-      <img src="https://i.imgur.com/P2s15XV.png" class="card__image" alt="" />
+      <img src="./images/2023/latin-jacket-1.png" class="card__image" alt="" />
       <div class="card__overlay">
         <div class="card__header">
           <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-          <img class="card__thumb" src="https://i.imgur.com/yEAJAz9.png" alt="" />
+          <img class="card__thumb" src="/images/Logos/white2.png" alt="" />
           <div class="card__header-text">
             <h3 class="card__title">Cronos Classroom</h3>
             <span class="card__tagline">Join current Live Auctions for our NFT Releases and Partner Projects.</span>            
@@ -601,14 +686,14 @@
   </li>
   <li>
     <a target="_blank" href="https://crobadge.netlify.app/" class="card">
-      <img src="https://i.imgur.com/PlRHimf.png" class="card__image" alt="" />
+      <img src="./images/2023/latin-jacket-1.png" class="card__image" alt="" />
       <div class="card__overlay">
         <div class="card__header">
           <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
-          <img class="card__thumb" src="https://i.imgur.com/XLVYBOn.png" alt="" />
+          <img class="card__thumb" src="/images/Logos/white2.png" alt="" />
           <div class="card__header-text">
-            <h3 class="card__title">NFT Minting Platform</h3>
-            <span class="card__status">3 hours ago</span>
+            <h3 class="card__title">NFT Minting Platform - Crobadge NFTs</h3>
+            <span class="card__status"></span>
           </div>          
         </div>
         <p class="card__description">Go Mint a Crobadge NFT for 66 $CRO.</p>
@@ -669,7 +754,7 @@
 </div>
 
 
-
+<h2>Contact Us</h2>
 <div class="contact-form-container">
   <form id="contact-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc6tGJVY0Kvk1ezV02ZadnTeO6BHcwlYD_1YuazjpTNvlIB_A/formResponse" method="POST">
     <div class="form-group">
@@ -684,7 +769,7 @@
       <label for="message">Message</label>
       <textarea class="form-control" id="message" name="entry.541279924" rows="3"></textarea>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-default">Submit</button>
   </form>
 </div>
 
@@ -696,6 +781,8 @@
     <div class="footer-links">
       <a href="/about.html" title="About Us">About Us</a>
       <a href="/index.html" title="Pricing">Home</a>
+      <a href="/privacypolicy.html" title="Pricing">Privacy Policy</a>
+      <a href="/terms.html" title="Pricing">Terms of Service</a>
       <!-- <a href="/services.html" title="Services">Services</a>
       <a href="/contact.html" title="Contact">Contact</a> -->
       <!-- Add more links as needed -->

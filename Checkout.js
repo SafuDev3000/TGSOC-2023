@@ -1,6 +1,8 @@
 //CHECKOUT.JS
 
 
+
+
 //CHECKOUT MODAL 
 // Get the modal
 var modal = document.getElementById("purchaseModal");
